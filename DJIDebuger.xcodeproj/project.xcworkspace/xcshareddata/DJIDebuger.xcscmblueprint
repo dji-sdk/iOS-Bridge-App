@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2D40537C1A47C4A4FB2A287A6D90813A26E2BC2C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "93F0A401E49107C99959E6952ABAF47F85C46FE9" : 0,
+    "2D40537C1A47C4A4FB2A287A6D90813A26E2BC2C" : 0,
+    "FF0D3C4C22A075989D4F328A65F089073E4A775B" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6C55A934-35C2-4976-A5CF-2A938671FE1B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "93F0A401E49107C99959E6952ABAF47F85C46FE9" : "ios-remotelogger\/",
+    "2D40537C1A47C4A4FB2A287A6D90813A26E2BC2C" : "ios-bridge\/",
+    "FF0D3C4C22A075989D4F328A65F089073E4A775B" : "DJI-MidWare-I\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DJIDebuger",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DJIDebuger\/DJIDebuger.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/us003.fly-access.com:7999\/msdk\/ios-bridge.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2D40537C1A47C4A4FB2A287A6D90813A26E2BC2C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/us003.fly-access.com:7999\/msdk\/ios-remotelogger.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "93F0A401E49107C99959E6952ABAF47F85C46FE9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "djigit11-rd.dji.com:iOS\/DJI-MidWare-I.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FF0D3C4C22A075989D4F328A65F089073E4A775B"
+    }
+  ]
+}

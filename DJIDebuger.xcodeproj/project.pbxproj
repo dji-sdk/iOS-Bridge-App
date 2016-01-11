@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B40CAD61BCCB89C00EF6E3D /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3B40CAD51BCCB89C00EF6E3D /* main.mm */; };
+		3B40CAD91BCCB89C00EF6E3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B40CAD81BCCB89C00EF6E3D /* AppDelegate.m */; };
+		3B40CADC1BCCB89C00EF6E3D /* DJIDRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B40CADB1BCCB89C00EF6E3D /* DJIDRootViewController.m */; };
+		3B40CADF1BCCB89C00EF6E3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B40CADD1BCCB89C00EF6E3D /* Main.storyboard */; };
+		3B40CAE11BCCB89C00EF6E3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B40CAE01BCCB89C00EF6E3D /* Assets.xcassets */; };
+		3B40CAE41BCCB89C00EF6E3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B40CAE21BCCB89C00EF6E3D /* LaunchScreen.storyboard */; };
+		3B40CAEF1BCCB89C00EF6E3D /* DJIDebugerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B40CAEE1BCCB89C00EF6E3D /* DJIDebugerTests.m */; };
+		F75E19E31C2AB5A50088846C /* DJISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75E19E11C2AB59F0088846C /* DJISDK.framework */; };
+		F75E19E41C2AB5A50088846C /* DJISDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F75E19E11C2AB59F0088846C /* DJISDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B40CAEB1BCCB89C00EF6E3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B40CAC91BCCB89C00EF6E3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B40CAD01BCCB89C00EF6E3D;
+			remoteInfo = DJIDebuger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DE248D111BE7957200610DD6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F75E19E41C2AB5A50088846C /* DJISDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		387EE3BD1BD222700002C877 /* DJIDebuger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DJIDebuger.entitlements; sourceTree = "<group>"; };
+		3B40CAD11BCCB89C00EF6E3D /* DJIDebuger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DJIDebuger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B40CAD51BCCB89C00EF6E3D /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		3B40CAD71BCCB89C00EF6E3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3B40CAD81BCCB89C00EF6E3D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3B40CADA1BCCB89C00EF6E3D /* DJIDRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJIDRootViewController.h; sourceTree = "<group>"; };
+		3B40CADB1BCCB89C00EF6E3D /* DJIDRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJIDRootViewController.m; sourceTree = "<group>"; };
+		3B40CADE1BCCB89C00EF6E3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B40CAE01BCCB89C00EF6E3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B40CAE31BCCB89C00EF6E3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B40CAE51BCCB89C00EF6E3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B40CAEA1BCCB89C00EF6E3D /* DJIDebugerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DJIDebugerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B40CAEE1BCCB89C00EF6E3D /* DJIDebugerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJIDebugerTests.m; sourceTree = "<group>"; };
+		3B40CAF01BCCB89C00EF6E3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F75E19E11C2AB59F0088846C /* DJISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DJISDK.framework; path = ../DJISDK.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B40CACE1BCCB89C00EF6E3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F75E19E31C2AB5A50088846C /* DJISDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B40CAE71BCCB89C00EF6E3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B40CAC81BCCB89C00EF6E3D = {
+			isa = PBXGroup;
+			children = (
+				3B40CAD31BCCB89C00EF6E3D /* DJIDebuger */,
+				3B40CAED1BCCB89C00EF6E3D /* DJIDebugerTests */,
+				3B40CAD21BCCB89C00EF6E3D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B40CAD21BCCB89C00EF6E3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B40CAD11BCCB89C00EF6E3D /* DJIDebuger.app */,
+				3B40CAEA1BCCB89C00EF6E3D /* DJIDebugerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B40CAD31BCCB89C00EF6E3D /* DJIDebuger */ = {
+			isa = PBXGroup;
+			children = (
+				3B40CAD71BCCB89C00EF6E3D /* AppDelegate.h */,
+				3B40CAD81BCCB89C00EF6E3D /* AppDelegate.m */,
+				3B40CADA1BCCB89C00EF6E3D /* DJIDRootViewController.h */,
+				3B40CADB1BCCB89C00EF6E3D /* DJIDRootViewController.m */,
+				3B40CADD1BCCB89C00EF6E3D /* Main.storyboard */,
+				3B40CAE01BCCB89C00EF6E3D /* Assets.xcassets */,
+				3B40CAE21BCCB89C00EF6E3D /* LaunchScreen.storyboard */,
+				3B40CAE51BCCB89C00EF6E3D /* Info.plist */,
+				3B40CAFC1BCCE05600EF6E3D /* Frameworks */,
+				3B40CAD41BCCB89C00EF6E3D /* Supporting Files */,
+			);
+			path = DJIDebuger;
+			sourceTree = "<group>";
+		};
+		3B40CAD41BCCB89C00EF6E3D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				387EE3BD1BD222700002C877 /* DJIDebuger.entitlements */,
+				3B40CAD51BCCB89C00EF6E3D /* main.mm */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3B40CAED1BCCB89C00EF6E3D /* DJIDebugerTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B40CAEE1BCCB89C00EF6E3D /* DJIDebugerTests.m */,
+				3B40CAF01BCCB89C00EF6E3D /* Info.plist */,
+			);
+			path = DJIDebugerTests;
+			sourceTree = "<group>";
+		};
+		3B40CAFC1BCCE05600EF6E3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F75E19E11C2AB59F0088846C /* DJISDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B40CAD01BCCB89C00EF6E3D /* DJIDebuger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B40CAF31BCCB89C00EF6E3D /* Build configuration list for PBXNativeTarget "DJIDebuger" */;
+			buildPhases = (
+				3B40CACD1BCCB89C00EF6E3D /* Sources */,
+				3B40CACE1BCCB89C00EF6E3D /* Frameworks */,
+				3B40CACF1BCCB89C00EF6E3D /* Resources */,
+				DE248D111BE7957200610DD6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DJIDebuger;
+			productName = DJIDebuger;
+			productReference = 3B40CAD11BCCB89C00EF6E3D /* DJIDebuger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B40CAE91BCCB89C00EF6E3D /* DJIDebugerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B40CAF61BCCB89C00EF6E3D /* Build configuration list for PBXNativeTarget "DJIDebugerTests" */;
+			buildPhases = (
+				3B40CAE61BCCB89C00EF6E3D /* Sources */,
+				3B40CAE71BCCB89C00EF6E3D /* Frameworks */,
+				3B40CAE81BCCB89C00EF6E3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B40CAEC1BCCB89C00EF6E3D /* PBXTargetDependency */,
+			);
+			name = DJIDebugerTests;
+			productName = DJIDebugerTests;
+			productReference = 3B40CAEA1BCCB89C00EF6E3D /* DJIDebugerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B40CAC91BCCB89C00EF6E3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = DJI;
+				TargetAttributes = {
+					3B40CAD01BCCB89C00EF6E3D = {
+						CreatedOnToolsVersion = 7.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
+					};
+					3B40CAE91BCCB89C00EF6E3D = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 3B40CAD01BCCB89C00EF6E3D;
+					};
+				};
+			};
+			buildConfigurationList = 3B40CACC1BCCB89C00EF6E3D /* Build configuration list for PBXProject "DJIDebuger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B40CAC81BCCB89C00EF6E3D;
+			productRefGroup = 3B40CAD21BCCB89C00EF6E3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B40CAD01BCCB89C00EF6E3D /* DJIDebuger */,
+				3B40CAE91BCCB89C00EF6E3D /* DJIDebugerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B40CACF1BCCB89C00EF6E3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B40CAE41BCCB89C00EF6E3D /* LaunchScreen.storyboard in Resources */,
+				3B40CAE11BCCB89C00EF6E3D /* Assets.xcassets in Resources */,
+				3B40CADF1BCCB89C00EF6E3D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B40CAE81BCCB89C00EF6E3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B40CACD1BCCB89C00EF6E3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B40CADC1BCCB89C00EF6E3D /* DJIDRootViewController.m in Sources */,
+				3B40CAD91BCCB89C00EF6E3D /* AppDelegate.m in Sources */,
+				3B40CAD61BCCB89C00EF6E3D /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B40CAE61BCCB89C00EF6E3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B40CAEF1BCCB89C00EF6E3D /* DJIDebugerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B40CAEC1BCCB89C00EF6E3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B40CAD01BCCB89C00EF6E3D /* DJIDebuger */;
+			targetProxy = 3B40CAEB1BCCB89C00EF6E3D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B40CADD1BCCB89C00EF6E3D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B40CADE1BCCB89C00EF6E3D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B40CAE21BCCB89C00EF6E3D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B40CAE31BCCB89C00EF6E3D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B40CAF11BCCB89C00EF6E3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B40CAF21BCCB89C00EF6E3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B40CAF41BCCB89C00EF6E3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../DJI-SDK3-I\"",
+					"\"$(SRCROOT)/../../DJI-MidWare-I/DJIMidware/DJIMidware\"/**",
+					"\"$(SRCROOT)/../../DJI-Logger-I/DJILogger\"/**",
+				);
+				INFOPLIST_FILE = DJIDebuger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = DJI.DJIDebuger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		3B40CAF51BCCB89C00EF6E3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../DJI-SDK3-I\"",
+					"\"$(SRCROOT)/../../DJI-MidWare-I/DJIMidware/DJIMidware\"/**",
+					"\"$(SRCROOT)/../../DJI-Logger-I/DJILogger\"/**",
+				);
+				INFOPLIST_FILE = DJIDebuger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = DJI.DJIDebuger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		3B40CAF71BCCB89C00EF6E3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DJIDebugerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DJI.DJIDebugerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DJIDebuger.app/DJIDebuger";
+			};
+			name = Debug;
+		};
+		3B40CAF81BCCB89C00EF6E3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DJIDebugerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DJI.DJIDebugerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DJIDebuger.app/DJIDebuger";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B40CACC1BCCB89C00EF6E3D /* Build configuration list for PBXProject "DJIDebuger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B40CAF11BCCB89C00EF6E3D /* Debug */,
+				3B40CAF21BCCB89C00EF6E3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B40CAF31BCCB89C00EF6E3D /* Build configuration list for PBXNativeTarget "DJIDebuger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B40CAF41BCCB89C00EF6E3D /* Debug */,
+				3B40CAF51BCCB89C00EF6E3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B40CAF61BCCB89C00EF6E3D /* Build configuration list for PBXNativeTarget "DJIDebugerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B40CAF71BCCB89C00EF6E3D /* Debug */,
+				3B40CAF81BCCB89C00EF6E3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B40CAC91BCCB89C00EF6E3D /* Project object */;
+}
