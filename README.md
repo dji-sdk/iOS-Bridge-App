@@ -6,7 +6,7 @@ This is an open source project for DJI Bridge App.
 
 The DJI Bridge App supports for native Xcode debugging with breakpoints. You can use it to debug your [DJI Mobile SDK](https://github.com/dji-sdk/Mobile-SDK-iOS) application for Phantom 3 Professional, Phantom 3 Advanced, Inspire 1, M100 and other products using USB/MFI connection between RC and your app. 
 
-For more details, please check the [DJI Bridge App Tutorial](https://github.com/dji-dev/DJI-Mobile-SDK-Beta/tree/master/iOS/DJIBridgeAppDemo).
+For more details, please check the [DJI Bridge App Tutorial](https://github.com/dji-sdk/Mobile-SDK-iOS/tree/master/DJIBridgeAppDemo).
 
 ## Prerequisites
 
