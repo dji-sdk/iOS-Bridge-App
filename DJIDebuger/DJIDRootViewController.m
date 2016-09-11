@@ -25,8 +25,6 @@
 
 @interface DJIDRootViewController ()<DJISDKDebugServerDelegate>
 
-@property (assign,nonatomic) pthread_mutex_t serviceMutex;
-
 // UI
 @property (weak,nonatomic) IBOutlet UILabel* debugIdLabel;
 @property (weak,nonatomic) IBOutlet UILabel* debugTitleLabel;
@@ -52,8 +50,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    pthread_mutex_init(&_serviceMutex, NULL);
-    
     [self initUI];
     
     weakSelf(target);
@@ -68,11 +64,6 @@
 
 - (UIStatusBarStyle) preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
-}
-
--(void) dealloc
-{
-    pthread_mutex_destroy(&_serviceMutex);
 }
 
 -(void) viewWillAppear:(BOOL)animated
