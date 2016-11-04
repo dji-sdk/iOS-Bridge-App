@@ -14,8 +14,8 @@
 		3B40CAE11BCCB89C00EF6E3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B40CAE01BCCB89C00EF6E3D /* Assets.xcassets */; };
 		3B40CAE41BCCB89C00EF6E3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B40CAE21BCCB89C00EF6E3D /* LaunchScreen.storyboard */; };
 		3B40CAEF1BCCB89C00EF6E3D /* DJIDebugerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B40CAEE1BCCB89C00EF6E3D /* DJIDebugerTests.m */; };
-		F75E19E31C2AB5A50088846C /* DJISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75E19E11C2AB59F0088846C /* DJISDK.framework */; };
-		F75E19E41C2AB5A50088846C /* DJISDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F75E19E11C2AB59F0088846C /* DJISDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A450D2B11DCB2BF50084A74C /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A450D2B01DCB2BF50084A74C /* ExternalAccessory.framework */; };
+		F9812801E61D922BC2E9FC56 /* libPods-DJIDebuger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE8C0BF0C5BFA952B355C9F1 /* libPods-DJIDebuger.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F75E19E41C2AB5A50088846C /* DJISDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,7 +56,10 @@
 		3B40CAEA1BCCB89C00EF6E3D /* DJIDebugerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DJIDebugerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B40CAEE1BCCB89C00EF6E3D /* DJIDebugerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJIDebugerTests.m; sourceTree = "<group>"; };
 		3B40CAF01BCCB89C00EF6E3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F75E19E11C2AB59F0088846C /* DJISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DJISDK.framework; path = ../DJISDK.framework; sourceTree = "<group>"; };
+		4BF028878A3A12C9D954E78B /* Pods-DJIDebuger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJIDebuger.release.xcconfig"; path = "Pods/Target Support Files/Pods-DJIDebuger/Pods-DJIDebuger.release.xcconfig"; sourceTree = "<group>"; };
+		705E1F100678A7DF50B6716B /* Pods-DJIDebuger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJIDebuger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DJIDebuger/Pods-DJIDebuger.debug.xcconfig"; sourceTree = "<group>"; };
+		A450D2B01DCB2BF50084A74C /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		DE8C0BF0C5BFA952B355C9F1 /* libPods-DJIDebuger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DJIDebuger.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F75E19E31C2AB5A50088846C /* DJISDK.framework in Frameworks */,
+				A450D2B11DCB2BF50084A74C /* ExternalAccessory.framework in Frameworks */,
+				F9812801E61D922BC2E9FC56 /* libPods-DJIDebuger.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,8 @@
 				3B40CAD31BCCB89C00EF6E3D /* DJIDebuger */,
 				3B40CAED1BCCB89C00EF6E3D /* DJIDebugerTests */,
 				3B40CAD21BCCB89C00EF6E3D /* Products */,
+				F340565B331ACADAAA46AD1E /* Pods */,
+				F3C62E5D926A06B79EC2C2C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,7 +140,24 @@
 		3B40CAFC1BCCE05600EF6E3D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F75E19E11C2AB59F0088846C /* DJISDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F340565B331ACADAAA46AD1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				705E1F100678A7DF50B6716B /* Pods-DJIDebuger.debug.xcconfig */,
+				4BF028878A3A12C9D954E78B /* Pods-DJIDebuger.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F3C62E5D926A06B79EC2C2C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A450D2B01DCB2BF50084A74C /* ExternalAccessory.framework */,
+				DE8C0BF0C5BFA952B355C9F1 /* libPods-DJIDebuger.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -147,10 +169,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B40CAF31BCCB89C00EF6E3D /* Build configuration list for PBXNativeTarget "DJIDebuger" */;
 			buildPhases = (
+				5D11CDA5BADB60438C0CA19A /* [CP] Check Pods Manifest.lock */,
 				3B40CACD1BCCB89C00EF6E3D /* Sources */,
 				3B40CACE1BCCB89C00EF6E3D /* Frameworks */,
 				3B40CACF1BCCB89C00EF6E3D /* Resources */,
 				DE248D111BE7957200610DD6 /* Embed Frameworks */,
+				B3DDBF0C2EE795941A0FC84A /* [CP] Embed Pods Frameworks */,
+				47E874A65338C01DE5241E1F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,6 +217,9 @@
 						CreatedOnToolsVersion = 7.0;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.DataProtection = {
 								enabled = 1;
 							};
 							com.apple.WAC = {
@@ -243,6 +271,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47E874A65338C01DE5241E1F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DJIDebuger/Pods-DJIDebuger-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D11CDA5BADB60438C0CA19A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B3DDBF0C2EE795941A0FC84A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DJIDebuger/Pods-DJIDebuger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B40CACD1BCCB89C00EF6E3D /* Sources */ = {
@@ -377,17 +453,17 @@
 		};
 		3B40CAF41BCCB89C00EF6E3D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 705E1F100678A7DF50B6716B /* Pods-DJIDebuger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = DJIDebuger/DJIDebuger.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../../../DJI-SDK3-I\"",
 					"\"$(SRCROOT)/../../DJI-MidWare-I/DJIMidware/DJIMidware\"/**",
@@ -397,7 +473,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = DJI.DJIDebuger;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dji.bridge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -405,17 +481,17 @@
 		};
 		3B40CAF51BCCB89C00EF6E3D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BF028878A3A12C9D954E78B /* Pods-DJIDebuger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = DJIDebuger/DJIDebuger.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../../../DJI-SDK3-I\"",
 					"\"$(SRCROOT)/../../DJI-MidWare-I/DJIMidware/DJIMidware\"/**",
@@ -425,7 +501,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = DJI.DJIDebuger;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dji.bridge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
