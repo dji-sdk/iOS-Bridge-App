@@ -56,6 +56,11 @@
     
     [self initUI];
     
+    // Dummy internet request to enforce internet access pop-up window.
+    NSURLRequest* request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://dev.dji.com"]];
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue currentQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
+    }];
+    
     weakSelf(target);
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         weakReturn(target);
