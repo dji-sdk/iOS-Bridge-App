@@ -40,7 +40,7 @@ If you install it successfully, you may get the messages similar to the followin
 ~~~
 Analyzing dependencies
 Downloading dependencies
-Installing DJI-SDK-iOS (3.5.1)
+Installing DJI-SDK-iOS (4.2.2)
 Generating Pods project
 Integrating client project
 

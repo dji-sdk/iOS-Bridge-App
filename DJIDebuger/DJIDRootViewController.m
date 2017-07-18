@@ -23,7 +23,7 @@
 #define RED_IMAGE_1 [UIImage imageNamed:@"icon_circle_red_1"]
 #define RED_IMAGE_2 [UIImage imageNamed:@"icon_circle_red_2"]
 
-@interface DJIDRootViewController ()<DJISDKDebugServerDelegate>
+@interface DJIDRootViewController ()<BridgeAppServerDelegate>
 
 @property (assign,nonatomic) pthread_mutex_t serviceMutex;
 
@@ -64,10 +64,10 @@
     weakSelf(target);
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         weakReturn(target);
-        [DJISDKManager  startSDKDebugServerWithCompletion:^(NSString* ipaddress){
+        [DJISDKManager startBridgeAppServerWithCompletion:^(NSString * _Nonnull ipaddress) {
             [target updateIPAddress:ipaddress];
         }];
-        [DJISDKManager setDebugServerDelegate:target];
+        [DJISDKManager setBridgeAppServerDelegate:target];
     });
 }
 
@@ -135,15 +135,15 @@
     weakSelf(target);
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         weakReturn(target);
-        [DJISDKManager setDebugServerDelegate:target];
-        [DJISDKManager startSDKDebugServerWithCompletion:^(NSString * ipaddress){
+        [DJISDKManager setBridgeAppServerDelegate:target];
+        [DJISDKManager startBridgeAppServerWithCompletion:^(NSString * _Nonnull ipaddress) {
             [target updateIPAddress:ipaddress];
         }];
     });
 }
 
--(void) sdkDebugServerWithRCConnectionStatus:(BOOL)isRCConnected andDebugClientConnectionStatus:(BOOL)isWifiConnected{
-
+- (void)bridgeAppServerWithRCConnectionStatus:(BOOL)isRCConnected andDebugClientConnectionStatus:(BOOL)isWifiConnected
+{
     weakSelf(target);
     dispatch_async(dispatch_get_main_queue(), ^{
         weakReturn(target);
