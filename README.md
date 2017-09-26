@@ -1,5 +1,7 @@
 # DJI Bridge App
 
+#### This repository is now deprecated, please refer to DJI SDK Bridge App on App Store: <https://itunes.apple.com/us/app/sdk-bridge/id1263583917?ls=1&mt=8>. It is only compatible with DJI iOS SDK 4.2.2 and below. 
+
 ## What is This?
 
 This is an open source project for DJI Bridge App. 
