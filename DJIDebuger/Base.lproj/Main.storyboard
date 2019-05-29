@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -105,13 +105,6 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zaL-P8-zPC" userLabel="Tab Button">
-                                <rect key="frame" x="140" y="143" width="319" height="44"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="jJ0-EJ-XpT"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U87-Qz-Bb6">
                                 <rect key="frame" x="187" y="288" width="225" height="54"/>
                                 <subviews>
@@ -144,8 +137,8 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Debug ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNj-Vg-VTC">
-                                <rect key="frame" x="187" y="249" width="225" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Debug ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNj-Vg-VTC">
+                                <rect key="frame" x="187" y="248" width="225" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="225" id="69b-O2-KYF"/>
                                     <constraint firstAttribute="height" constant="33" id="yMm-0S-Vlt"/>
@@ -178,16 +171,12 @@
                         <constraints>
                             <constraint firstItem="U87-Qz-Bb6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.4" constant="-132" id="2Mg-m8-UuW"/>
                             <constraint firstItem="Lnb-b9-Fls" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="5Dn-ay-oZi"/>
-                            <constraint firstItem="zaL-P8-zPC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.55" id="7jg-Va-BTW"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gW2-oi-7el" secondAttribute="bottom" constant="41" id="84m-ga-zcG"/>
-                            <constraint firstItem="zaL-P8-zPC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="140" id="9zo-Dh-tvz"/>
                             <constraint firstItem="U87-Qz-Bb6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A2v-DJ-3GR"/>
-                            <constraint firstItem="zaL-P8-zPC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E5g-f5-6Bu"/>
                             <constraint firstItem="gW2-oi-7el" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.8" constant="-6.5" id="K4A-zJ-IJo"/>
                             <constraint firstItem="Lnb-b9-Fls" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="Tit-zW-jfg"/>
                             <constraint firstItem="CNj-Vg-VTC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tjh-ED-UJ1"/>
                             <constraint firstItem="Lnb-b9-Fls" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Uc4-O5-iBl"/>
-                            <constraint firstItem="zaL-P8-zPC" firstAttribute="width" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" constant="420" id="Uco-Pt-Rwm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Lnb-b9-Fls" secondAttribute="trailing" constant="-20" id="W9I-YQ-vd6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Lnb-b9-Fls" secondAttribute="trailing" id="cxz-bU-ABt"/>
                             <constraint firstItem="gW2-oi-7el" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ekK-PZ-AAY"/>
